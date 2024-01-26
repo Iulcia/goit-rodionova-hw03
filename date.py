@@ -12,4 +12,4 @@ def get_days_from_today(date):
     diff = current_date.toordinal() - start_date.toordinal()
     return diff
 
-print(get_days_from_today('190-02-20'))
+#print(get_days_from_today('190-02-20'))
