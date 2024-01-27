@@ -2,10 +2,10 @@ import datetime as dt
 from datetime import datetime as dtdt, timedelta
 
 """
-This function returns upcoming in 7 days birthdays for set of users (list of dicts)
+This function returns upcoming in 7 days birthdays for set of users (returns list of dicts)
 """
 
-def get_upcoming_birthdays(users):
+def get_upcoming_birthdays(users) -> list:
 
     today_date = dtdt.today().date()
     birthdays = []

@@ -1,7 +1,7 @@
 import random
 
 """
-Fnc returns  list with lenght of {quantity} of unique RANDOM integers from {min} to {max} values inclusively
+Fnc returns list of unique RANDOM integers with lenght of {quantity} from {min} to {max} values inclusively
 """
 
 def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
