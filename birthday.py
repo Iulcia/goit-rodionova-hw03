@@ -2,14 +2,13 @@ import datetime as dt
 from datetime import datetime as dtdt, timedelta
 
 users = [
-    {"name": "John Doe", "birthday": "1985.01.06"},
+    {"name": "John Doe", "birthday": "1985.02.01"},
     {"name": "Jane Smith", "birthday": "1990.01.02"},
     {"name": "Yuliia Smith2", "birthday": "1990.01.07"}
 ]
 
 def get_upcoming_birthdays(users):
-    #today_date = dtdt.today().date()
-    today_date = dtdt.strptime('2023.12.31', "%Y.%m.%d").date()
+    today_date = dtdt.today().date()
     birthdays = []
     diffs = []
     for user in users:
@@ -33,8 +32,6 @@ def get_upcoming_birthdays(users):
                 birthdays.append({'name': user['name'], 'congratulation_date': (bdate + delta).strftime('%Y.%m.%d')}) 
     
     return birthdays
-
-
 
 
 print(get_upcoming_birthdays(users))
